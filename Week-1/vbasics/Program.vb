@@ -19,8 +19,8 @@ Module Program
     ' using dim, the syntax is dim name of var as datatype
     ' the greeter function returns a string that we are passing to the 
     ' greeting variable 
-    ' dim greeting as String =  greeter("casual")
-    ' Console.WriteLine(greeting)
+    dim greeting as String =  greeter("casual")
+    Console.WriteLine(greeting)
     ' GuessingGame(1)
     ' Counter(3)
     GuessingGamev2()
@@ -32,7 +32,8 @@ Module Program
         ' select case AKA switch
         Select Case greeting_type
             Case "casual"
-                Return "'sup"
+                greeting_type = "'sup"
+                Return greeting_type
             Case "business casual"
                 Return "salutations!"
             Case "full business"
